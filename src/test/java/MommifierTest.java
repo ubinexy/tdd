@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-public class MommifierTest {
+class MommifierTest {
 
     @Test
     void should_return_origin_when_vowel_split_give_string_with_vowels_lower_then_30_percent() {
@@ -11,7 +11,7 @@ public class MommifierTest {
     }
 
     @Test
-    void should_insert_mommy_when_vowel_split_give_string_with_vowels_higher_then_30_percent() {
+    void should_return_origin_when_vowel_split_give_string_with_vowels_higher_then_30_percent_but_not_continue() {
         Mommifier mommifier = new Mommifier();
         String origin = "zippa";
         String expect = "zippa";
@@ -19,7 +19,7 @@ public class MommifierTest {
     }
 
     @Test
-    void should_return_origin_when_vowel_split_give_string_with_vowels_higher_then_30_percent_but_not_continue() {
+    void should_insert_mommy_when_vowel_split_give_string_with_vowels_higher_then_30_percent() {
         Mommifier mommifier = new Mommifier();
         String origin = "hear";
         String expect = "hemommyar";
